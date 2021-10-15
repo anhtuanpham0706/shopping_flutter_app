@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_flutter_app/constants.dart';
-//import 'package:shopping_flutter_app/screens/sign_in/sign_in_screen.dart';
+import 'package:shopping_flutter_app/screens/sign_in/sign_in_screen.dart';
 import 'package:shopping_flutter_app/size_config.dart';
 
 
@@ -68,9 +68,9 @@ class _BodyState extends State<Body> {
                     ),
                     Spacer(flex: 3),
                     DefaultButton(
-                      text: "Tiếp tục",
+                      text: "CONTINUE",
                       press: () {
-                      //  Navigator.pushNamed(context, SignInScreen.routeName);
+                        Navigator.pushNamed(context, SignInScreen.routeName);
                       },
                     ),
                     Spacer(),

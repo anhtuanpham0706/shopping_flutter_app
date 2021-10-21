@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//import 'components/body.dart';
+import 'components/body.dart';
 
 class LoginSuccessScreen extends StatelessWidget {
   static String routeName = "/login_success";
@@ -9,9 +9,11 @@ class LoginSuccessScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: SizedBox(),
-        title: Text("Login Success"),
+        title: Center(child: Text("Login Success", style: TextStyle(
+          fontWeight: FontWeight.bold, fontSize: 20
+        ),)),
       ),
-      body: Container(),
+      body: Body(),
     );
   }
 }

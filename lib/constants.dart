@@ -45,3 +45,4 @@ OutlineInputBorder outlineInputBorder() {
     borderSide: BorderSide(color: kTextColor),
   );
 }
+const defaultDuration = Duration(milliseconds: 250);

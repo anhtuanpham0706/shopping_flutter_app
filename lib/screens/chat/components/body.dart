@@ -10,14 +10,14 @@ class Body extends StatefulWidget {
 
 class _ChatPageState extends State<Body> {
   List<ChatUsers> chatUsers = [
-    ChatUsers(name: "Apple Store", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/iphone_13_1.png", time: "Now"),
-    ChatUsers(name: "Samsum Store", messageText: "That's Great", imageURL: "lib/assets/images/macbook_pro.png", time: "Yesterday"),
-    ChatUsers(name: "MSI Mall", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/ipad_pro_1.png", time: "31 Mar"),
-    ChatUsers(name: "Yami Shop", messageText: "Busy! Call me in 20 mins", imageURL: "lib/assets/images/macbook_pro.png", time: "28 Mar"),
-    ChatUsers(name: "Xiaomi Store", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/iphone_13_1.png", time: "23 Mar"),
-    ChatUsers(name: "Asus", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/macbook_pro.png", time: "17 Mar"),
-    ChatUsers(name: "Sony", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/ipad_pro_1.png", time: "24 Feb"),
-    ChatUsers(name: "Casio", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/iphone_13_1.png", time: "18 Feb"),
+    ChatUsers(name: "Apple Store", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/Apple-logo.png", time: "Now"),
+    ChatUsers(name: "Samsung Store", messageText: "That's Great", imageURL: "lib/assets/images/samsung-logo.png", time: "Yesterday"),
+    ChatUsers(name: "MSI Mall", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/msi_gaming.png", time: "31 Mar"),
+    ChatUsers(name: "Yami Shop", messageText: "Busy! Call me in 20 mins", imageURL: "lib/assets/images/yami_logo.png", time: "28 Mar"),
+    ChatUsers(name: "Xiaomi Store", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/Xiaomi_logo.png", time: "23 Mar"),
+    ChatUsers(name: "Asus", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/asus_logo.png", time: "17 Mar"),
+    ChatUsers(name: "Sony", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/sony_logo.png", time: "24 Feb"),
+    ChatUsers(name: "Casio", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/casio_logo.png", time: "18 Feb"),
   ];
 
   @override

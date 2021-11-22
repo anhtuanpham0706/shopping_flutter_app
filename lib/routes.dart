@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:shopping_flutter_app/screens/cart/cart_screen.dart';
 import 'package:shopping_flutter_app/screens/chat/chat_screen.dart';
 import 'package:shopping_flutter_app/screens/complete_profile/complete_profile_screen.dart';
 import 'package:shopping_flutter_app/screens/details/details_screen.dart';
@@ -27,4 +28,6 @@ final Map<String, WidgetBuilder> routes = {
   ProfileScreen.routeName:(context) => ProfileScreen(),
   ChatScreen.routeName:(context) => ChatScreen(),
   LikeScreen.routeName:(context) => LikeScreen(),
+  CartScreen.routeName:(context) => CartScreen(),
+  ProfileScreen.routeName:(context) => ProfileScreen(),
 };

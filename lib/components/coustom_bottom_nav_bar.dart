@@ -4,7 +4,7 @@ import 'package:shopping_flutter_app/screens/chat/chat_screen.dart';
 import 'package:shopping_flutter_app/screens/home/home_screen.dart';
 import 'package:shopping_flutter_app/screens/like/like_screen.dart';
 import 'package:shopping_flutter_app/screens/profile/profile_screen.dart';
-//import 'package:shop_app/screens/profile/profile_screen.dart';
+
 
 import '../constants.dart';
 import '../emuns.dart';
@@ -33,8 +33,8 @@ class CustomBottomNavBar extends StatelessWidget {
           ),
         ],
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(40),
-          topRight: Radius.circular(40),
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
         ),
       ),
       child: SafeArea(
@@ -82,7 +82,6 @@ class CustomBottomNavBar extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, ProfileScreen.routeName);
                 }
-
               ),
             ],
           )),

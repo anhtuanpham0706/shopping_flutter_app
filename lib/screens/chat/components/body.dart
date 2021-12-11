@@ -10,14 +10,14 @@ class Body extends StatefulWidget {
 
 class _ChatPageState extends State<Body> {
   List<ChatUsers> chatUsers = [
-    ChatUsers(name: "Apple Store", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/Apple-logo.png", time: "Now"),
-    ChatUsers(name: "Samsung Store", messageText: "That's Great", imageURL: "lib/assets/images/samsung-logo.png", time: "Yesterday"),
-    ChatUsers(name: "MSI Mall", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/msi_gaming.png", time: "31 Mar"),
-    ChatUsers(name: "Yami Shop", messageText: "Busy! Call me in 20 mins", imageURL: "lib/assets/images/yami_logo.png", time: "28 Mar"),
-    ChatUsers(name: "Xiaomi Store", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/Xiaomi_logo.png", time: "23 Mar"),
-    ChatUsers(name: "Asus", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/asus_logo.png", time: "17 Mar"),
-    ChatUsers(name: "Sony", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/sony_logo.png", time: "24 Feb"),
-    ChatUsers(name: "Casio", messageText: "Thank you, It's awesome", imageURL: "lib/assets/images/casio_logo.png", time: "18 Feb"),
+    ChatUsers(name: "Apple Store", messageText: "Xin chào, bạn cần hỗ trợ gì ?", imageURL: "lib/assets/images/Apple-logo.png", time: "Now"),
+    ChatUsers(name: "Samsung Store", messageText: "Cám ơn", imageURL: "lib/assets/images/samsung-logo.png", time: "Yesterday"),
+    ChatUsers(name: "MSI Mall", messageText: "Cám ơn , Đã sử dụng dịch vụ", imageURL: "lib/assets/images/msi_gaming.png", time: "31 Mar"),
+    ChatUsers(name: "Yami Shop", messageText: "Oh, Chờ tôi một chút", imageURL: "lib/assets/images/yami_logo.png", time: "28 Mar"),
+    ChatUsers(name: "Xiaomi Store", messageText: "Hen gặp lại !!", imageURL: "lib/assets/images/Xiaomi_logo.png", time: "23 Mar"),
+    ChatUsers(name: "Asus", messageText: "Tôi có thể giúp gì ?", imageURL: "lib/assets/images/asus_logo.png", time: "17 Mar"),
+    ChatUsers(name: "Sony", messageText: "Tôi có một số vấn đề ", imageURL: "lib/assets/images/sony_logo.png", time: "24 Feb"),
+    ChatUsers(name: "Casio", messageText: "Chờ một chút", imageURL: "lib/assets/images/casio_logo.png", time: "18 Feb"),
   ];
 
   @override

@@ -24,7 +24,9 @@ class Body extends StatelessWidget {
             children: [
               ProductDescription(
                 product: product,
-                pressOnSeeMore: () {},
+                pressOnSeeMore: () {
+
+                },
               ),
               TopRoundedContainer(
                 color: Color(0xFFF6F7F9),
@@ -41,7 +43,7 @@ class Body extends StatelessWidget {
                           top: getProportionateScreenWidth(15),
                         ),
                         child: DefaultButton(
-                          text: "Add To Cart",
+                          text: "Thêm vào giỏ hàng",
                           press: () {},
                         ),
                       ),

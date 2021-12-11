@@ -109,7 +109,7 @@ class _OtpFormState extends State<OtpForm> {
           ),
           SizedBox(height: SizeConfig.screenHeight * 0.15),
           DefaultButton(
-            text: "Continue",
+            text: "Hoàn Tất",
             press: () {
               Navigator.pushNamed(context, SignInScreen.routeName);
             },

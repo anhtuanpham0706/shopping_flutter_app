@@ -15,6 +15,7 @@ class ProductDescription extends StatelessWidget {
   final Product product;
   final GestureTapCallback? pressOnSeeMore;
 
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -23,9 +24,18 @@ class ProductDescription extends StatelessWidget {
         Padding(
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
-          child: Text(
-            product.title,
-            style: Theme.of(context).textTheme.headline6,
+          child: Column(
+            children: [
+              Text(
+                product.title,
+                style: Theme.of(context).textTheme.headline6,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 5.0, right: 140),
+                child: Text("\$ ${product.price.toString()}",
+                  style: TextStyle(fontSize: 18,color: Colors.deepOrange),),
+              )
+            ],
           ),
         ),
         Align(
@@ -68,10 +78,15 @@ class ProductDescription extends StatelessWidget {
             onTap: () {},
             child: Row(
               children: [
-                Text(
-                  "See More Detail",
-                  style: TextStyle(
-                      fontWeight: FontWeight.w600, color: kPrimaryColor),
+                GestureDetector(
+                  onTap: (){
+
+                  },
+                  child: Text(
+                    "See More Detail",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w600, color: kPrimaryColor),
+                  ),
                 ),
                 SizedBox(width: 5),
                 Icon(

@@ -50,7 +50,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(40)),
           DefaultButton(
-            text: "continue",
+            text: "TIẾP TỤC",
             press: () {
               if (_formKey.currentState!.validate()) {
                Navigator.pushNamed(context, OtpScreen.routeName);

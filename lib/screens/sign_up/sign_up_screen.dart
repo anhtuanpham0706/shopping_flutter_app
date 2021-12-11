@@ -10,8 +10,7 @@ class SignUpscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Sign Up', textAlign: TextAlign.center,),
-      ),
+
     ),
       body: Body(),
     );

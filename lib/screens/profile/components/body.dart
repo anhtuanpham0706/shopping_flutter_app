@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_flutter_app/screens/sign_in/sign_in_screen.dart';
 
 import 'profile_menu.dart';
 import 'profile_pic.dart';
@@ -13,29 +14,31 @@ class Body extends StatelessWidget {
           ProfilePic(),
           SizedBox(height: 20),
           ProfileMenu(
-            text: "My Account",
+            text: "Tài khoản",
             icon: "lib/assets/icons/User Icon.svg",
             press: () => {},
           ),
           ProfileMenu(
-            text: "Notifications",
+            text: "Thông báo",
             icon: "lib/assets/icons/Bell.svg",
             press: () {},
           ),
           ProfileMenu(
-            text: "Settings",
+            text: "Cài đặt",
             icon: "lib/assets/icons/Settings.svg",
             press: () {},
           ),
           ProfileMenu(
-            text: "Help Center",
+            text: "Hỗ trợ",
             icon: "lib/assets/icons/Question mark.svg",
             press: () {},
           ),
           ProfileMenu(
-            text: "Log Out",
+            text: "Đăng xuất",
             icon: "lib/assets/icons/Log out.svg",
-            press: () {},
+            press: () {
+              Navigator.pushNamed(context, SignInScreen.routeName);
+            },
           ),
         ],
       ),

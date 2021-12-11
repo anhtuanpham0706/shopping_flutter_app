@@ -12,7 +12,6 @@ class ColorDots extends StatelessWidget {
   }) : super(key: key);
 
   final Product product;
-
   @override
   Widget build(BuildContext context) {
     // Now this is fixed and only for demo

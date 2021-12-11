@@ -22,14 +22,14 @@ final headingStyle = TextStyle(
 
 final RegExp emailValidatorRegExp =
 RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
-const String kEmailNullError = "Please Enter your email";
-const String kInvalidEmailError = "Please Enter Valid Email";
-const String kPassNullError = "Please Enter your password";
-const String kShortPassError = "Password is too short";
-const String kMatchPassError = "Passwords don't match";
-const String kNamelNullError = "Please Enter your name";
-const String kPhoneNumberNullError = "Please Enter your phone number";
-const String kAddressNullError = "Please Enter your address";
+const String kEmailNullError = "Vui lòng điền vào Email";
+const String kInvalidEmailError = "Vui lòng điền Email đúng cú pháp";
+const String kPassNullError = "Vui lòng điền vào mật khẩu";
+const String kShortPassError = "Password quá ngắn";
+const String kMatchPassError = "Passwords không đúng";
+const String kNamelNullError = "Vui lòng điền vào tên của bạn";
+const String kPhoneNumberNullError = "Vui lòng điền vào số điện thoại";
+const String kAddressNullError = "Vui lòng điền vào địa chỉ";
 
 final otpInputDecoration = InputDecoration(
   contentPadding:

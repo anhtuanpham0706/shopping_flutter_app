@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_flutter_app/screens/cart/cart_screen.dart';
-
-
+import 'package:shopping_flutter_app/screens/chat/chat_screen.dart';
 import '../../../size_config.dart';
 import 'icon_btn_with_counter.dart';
 import 'search_field.dart';
@@ -27,7 +26,9 @@ class HomeHeader extends StatelessWidget {
           IconBtnWithCounter(
             svgSrc: "lib/assets/icons/Chat bubble Icon.svg",
             numOfitem: 3,
-            press: () {},
+            press: () {
+              Navigator.pushNamed(context, ChatScreen.routeName);
+            },
           ),
         ],
       ),

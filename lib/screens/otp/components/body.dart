@@ -20,7 +20,7 @@ class Body extends StatelessWidget {
                 "OTP Verification",
                 style: headingStyle,
               ),
-              Text("We sent your code to +84 *** *** ***"),
+              Text("Chúng tôi đã gửi mã đến +84 *** *** ***"),
               buildTimer(),
               OtpForm(),
               SizedBox(height: SizeConfig.screenHeight * 0.1),
@@ -30,7 +30,7 @@ class Body extends StatelessWidget {
 
                 },
                 child: Text(
-                  "Resend OTP Code",
+                  "Gửi lại OTP Code",
                   style: TextStyle(decoration: TextDecoration.underline,
                   fontWeight: FontWeight.bold, fontSize: 20),
                 ),
@@ -46,7 +46,7 @@ class Body extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("This code will expired in "),
+        Text("Mã hết hiệu lực trong "),
         TweenAnimationBuilder(
           tween: Tween(begin: 30.0, end: 0.0),
           duration: Duration(seconds: 30),

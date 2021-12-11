@@ -23,11 +23,11 @@ AppBar buildAppBar(BuildContext context) {
     title: Column(
       children: [
         Text(
-          "Your favorite item",
+          "Sản Phẩm Ưa Thích",
           style: TextStyle(color: Colors.black),
         ),
         Text(
-          "${demoCarts.length} items",
+          "${demoCarts.length} sản phẩm",
           style: Theme.of(context).textTheme.caption,
         ),
       ],

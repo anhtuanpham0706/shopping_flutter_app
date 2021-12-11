@@ -16,7 +16,7 @@ class NoAccountText extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "Don’t have an account? ",
+          "Bạn không có tài khoản? ",
           style: TextStyle(fontSize: getProportionateScreenWidth(16)),
         ),
         GestureDetector(
@@ -24,7 +24,7 @@ class NoAccountText extends StatelessWidget {
             Navigator.pushNamed(context, SignUpscreen.routeName);
           },
           child: Text(
-            "Sign Up",
+            "Đăng ký",
             style: TextStyle(
                 fontSize: getProportionateScreenWidth(16),
                 color: kPrimaryColor),

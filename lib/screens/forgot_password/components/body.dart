@@ -20,7 +20,7 @@ class Body extends StatelessWidget {
             children: [
               SizedBox(height: SizeConfig.screenHeight * 0.04),
               Text(
-                "Forgot Password",
+                "Bạn quên Password ?",
                 style: TextStyle(
                   fontSize: getProportionateScreenWidth(28),
                   color: Colors.black,
@@ -28,7 +28,7 @@ class Body extends StatelessWidget {
                 ),
               ),
               Text(
-                "Please enter your email and we will send \nyou a link to return to your account",
+                "Vui lòng điền email và  chúng tôi sẽ giử cho  \nbạn link để tạo mới password",
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: SizeConfig.screenHeight * 0.1),
@@ -60,31 +60,31 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
             keyboardType: TextInputType.emailAddress,
             onSaved: (newValue) => email = newValue,
             onChanged: (value) {
-              // if (value.isNotEmpty && errors.contains(kEmailNullError)) {
-              //   setState(() {
-              //     errors.remove(kEmailNullError);
-              //   });
-              // } else if (emailValidatorRegExp.hasMatch(value) &&
-              //     errors.contains(kInvalidEmailError)) {
-              //   setState(() {
-              //     errors.remove(kInvalidEmailError);
-              //   });
-              // }
-              // return null;
+              if (value.isNotEmpty && errors.contains(kEmailNullError)) {
+                setState(() {
+                  errors.remove(kEmailNullError);
+                });
+              } else if (emailValidatorRegExp.hasMatch(value) &&
+                  errors.contains(kInvalidEmailError)) {
+                setState(() {
+                  errors.remove(kInvalidEmailError);
+                });
+              }
+              return null;
             },
-            // validator: (value) {
-            //   if (value!.isEmpty && !errors.contains(kEmailNullError)) {
-            //     setState(() {
-            //       errors.add(kEmailNullError);
-            //     });
-            //   } else if (!emailValidatorRegExp.hasMatch(value) &&
-            //       !errors.contains(kInvalidEmailError)) {
-            //     setState(() {
-            //       errors.add(kInvalidEmailError);
-            //     });
-            //   }
-            //   return null;
-            // },
+            validator: (value) {
+              if (value!.isEmpty && !errors.contains(kEmailNullError)) {
+                setState(() {
+                  errors.add(kEmailNullError);
+                });
+              } else if (!emailValidatorRegExp.hasMatch(value) &&
+                  !errors.contains(kInvalidEmailError)) {
+                setState(() {
+                  errors.add(kInvalidEmailError);
+                });
+              }
+              return null;
+            },
             decoration: InputDecoration(
               labelText: "Email",
               hintText: "Enter your email",
@@ -98,7 +98,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
           FormError(errors: errors),
           SizedBox(height: SizeConfig.screenHeight * 0.1),
           DefaultButton(
-            text: "Continue",
+            text: "TIẾP TỤC",
             press: () {
               if (_formKey.currentState!.validate()) {
                 // Do what you want to do
